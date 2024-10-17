@@ -57,5 +57,5 @@ function setDefaultAvatar() {
 window.onload = setDefaultAvatar;
 
 document.getElementById('username').addEventListener('click', function() {
-    window.open('https://github.com/ATOMPassakorn', '_blank');
+    window.open('https://github.com/whalpnc', '_blank');
 });
