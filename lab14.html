@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+    <link rel="icon" type="img/svg" href="call.svg">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>
+        <span class="username" id="username">67070012</span> Phone Book
+    </h1>
+    <div class="avatar" id="avatar">
+        <div class="notification">1</div>
+    </div>
+    
+    <div>
+        <p class="user">Set The Username<input type="text" id="usernameInput" placeholder="Enter Username">
+        <button onclick="setUsername()">SET</button></p>
+    </div>
+    <div>
+        <p>Set the profile image URL<input type="text" id="avatarInput" placeholder="Enter Image URL">
+        <button onclick="setAvatar()">SET</button></p>
+    </div>
+    
+    <div>
+        <p align="center"><b>Phone Number List</b></p>
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="tel" id="phoneInput" placeholder="Tel">
+        <button onclick="addContact()">ADD</button>
+        <button onclick="exportContacts()">EXPORT</button>
+    </div>
+    
+    <table id="contactTable">
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
